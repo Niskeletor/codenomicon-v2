@@ -1,0 +1,18 @@
+---
+
+import CardsDisplay from "../components/CardsDisplay"
+import DataFetcher from "../components/DataFetcher"
+import Header from "../layouts/header.astro"
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <Header />
+</head>
+<body>
+<p>Hola</p>
+<DataFetcher client:load/>
+<CardsDisplay client:load/>
+</body>
+</html>

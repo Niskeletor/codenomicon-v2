@@ -1,0 +1,16 @@
+---
+import BotonCarga from "../components/BotonCarga"
+import CardDatos from "../components/CardDatos"
+import Header from "../layouts/header.astro"
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <Header />
+</head>
+<body>
+    <BotonCarga client:load/>
+    <CardDatos client:load/>   
+</body>
+</html>
