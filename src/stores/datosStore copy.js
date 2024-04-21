@@ -1,18 +1,19 @@
 // stores/datosStore.js
 import { atom } from 'nanostores';
 import { supabase } from '../lib/supabaseClient.js';
-
 export const datosStore = atom([]);
 
-export async function cargarDatos(categoria) {
-  let query = supabase.from('resources').select('*');
+console.log(supabase);
+console.log(supabase.from);
 
-  // Si se proporciona una categoría, filtramos los resultados
-  if (categoria) {
-    query = query.eq('categoria', categoria);
-  }
 
-  let { data, error } = await query;
+export async function cargarDatos() {
+  let { data, error } = await supabase
+
+    .from('resources')
+    .select('*');
+    console.log(supabase);
+    console.log(supabase.from);
 
   if (error) {
     console.error('Error cargando los datos:', error);
