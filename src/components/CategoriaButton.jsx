@@ -1,5 +1,5 @@
 // components/CategoriaButton.jsx
-import React from 'react';
+
 import { cargarDatos } from '../stores/datosStore';
 import { ICONS } from '../icons/icons'; 
 

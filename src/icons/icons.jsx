@@ -7,5 +7,5 @@ import { ReactComponent as IconoFont } from './iconoFont.svg';
 export const ICONS = {
   android: IconoAndroid,
   apple: IconoApple,
-  font: IconoFont,
+  fonts: IconoFont
 };
