@@ -11,7 +11,7 @@ export async function cargarDatos() {
   let { data, error } = await supabase
 
     .from('resources')
-    .select('url, titulo');
+    .select('*');
     console.log(supabase);
     console.log(supabase.from);
 

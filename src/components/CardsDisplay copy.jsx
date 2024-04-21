@@ -16,10 +16,8 @@ function CardDatos() {
           <a href={dato.url}>
             <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{dato.titulo}</h5>
           </a>
-          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{dato.descripcion}</p>
-          
-          {/* Agregar botones adiccionales
-          <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Hola {dato.id}</p> */}
+          <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Hola {dato.id}</p>
+          {/* Aquí puedes agregar un enlace o botón si es necesario */}
         </div>
       ))}
     </div>

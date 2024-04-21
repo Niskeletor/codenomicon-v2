@@ -1,31 +1,9 @@
 ---
 import Base from "../layouts/base.astro";
 
-import { createClient } from "@supabase/supabase-js";
-
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
-
-// Función asíncrona para cargar los datos desde Supabase
-async function cargarDatos() {
-  let { data, error } = await supabase
-    .from('resources')
-    .select('url, titulo');
-
-  if (error) {
-    console.error('Error cargando los datos:', error);
-    return [];
-  }
-
-  console.log('Datos cargados:', data);
-  return data;
-}
-
-// Llama a la función cargarDatos() y almacena el resultado
-// Esto se ejecutará en el servidor durante el tiempo de compilación
-const datos = await cargarDatos();
+import CardsDisplay from "../components/CardsDisplay"
+import DataFetcher from "../components/DataFetcher"
+import Header from "../layouts/header.astro"
 
 ---
 
