@@ -11,7 +11,7 @@ function CardDatos() {
         <div key={index} className="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 text-center">
          
   {/* Card image */}
-  <a href="#!">
+  <a href={dato.url} target="_blank" rel="noopener noreferrer">
     <img class="rounded-t-lg" src={
       dato.img && dato.img !== "Failed to retrieve" && dato.img !== "Not Found" && dato.img !== "og-image.png"
       ? dato.img
