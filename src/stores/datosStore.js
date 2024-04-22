@@ -13,6 +13,7 @@ export async function cargarDatos(categoria) {
   }
 
   let { data, error } = await query;
+  console.log('Respuesta de Supabase:', data, error); 
 
   if (error) {
     console.error('Error cargando los datos:', error);
