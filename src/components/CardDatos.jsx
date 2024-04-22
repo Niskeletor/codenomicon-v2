@@ -8,21 +8,33 @@ function CardDatos() {
   return (
     <>
       {datos.map((dato, index) => (
-        <div key={index} className="w-full  p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <svg className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            {/* Imagen SVG */}
-          </svg>
-          <a href={dato.url}>
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{dato.titulo}</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{dato.descripcion}</p>
-          
-          {/* Agregar botones adiccionales
-          <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Hola {dato.id}</p> */}
-        </div>
+        <div key={index} className="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 text-center">
+         
+  
+  <a href="#!">
+    <img class="rounded-t-lg" src="../../public/codenomicon_icon.png" alt="" />
+  </a>
+
+  
+  <div class="p-6">
+
+    
+    <h5 class="mb-2 text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
+      {dato.titulo}
+    </h5>
+
+    
+    <p class="mb-2 text-base text-neutral-500 dark:text-neutral-300">
+      {dato.descripcion}
+    </p>
+
+  </div>
+
+</div>
       ))}
     </>
   );
 }
 
 export default CardDatos;
+
