@@ -2,6 +2,8 @@
 import CategoriaButton from '../components/CategoriaButton'
 import DataFetcher from '../components/DataFetcher'
 
+//import { FontIcon, AiIcon, AnimationIcon, CodingIcon, ColorIcon, DesignIcon, DevelopersIcon, ExtensionIcon, IconsIcon, IllustrationIcon, InspirationIcon, JobsIcon, PatternIcon, ProductivityIcon, TemplateIcon} from '../components/icons/icons';
+import FontIcon from '../components/icons/FontIcon';
 
 ---
 <div class="relative bg-white dark:bg-gray-800">
@@ -53,10 +55,10 @@ import DataFetcher from '../components/DataFetcher'
                     </span>
                 </a>
                 <a class="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200  text-gray-600 dark:text-gray-400 rounded-lg " href="#">
-                    <svg width="20" height="20" class="m-auto" fill="currentColor" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1070 1178l306-564h-654l-306 564h654zm722-282q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z">
-                        </path>
-                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                    <path d="M14 19L11.1069 10.7479C9.76348 6.91597 9.09177 5 8 5C6.90823 5 6.23652 6.91597 4.89309 10.7479L2 19M4.5 12H11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21.9692 13.9392V18.4392M21.9692 13.9392C22.0164 13.1161 22.0182 12.4891 21.9194 11.9773C21.6864 10.7709 20.4258 10.0439 19.206 9.89599C18.0385 9.75447 17.1015 10.055 16.1535 11.4363M21.9692 13.9392L19.1256 13.9392C18.6887 13.9392 18.2481 13.9603 17.8272 14.0773C15.2545 14.7925 15.4431 18.4003 18.0233 18.845C18.3099 18.8944 18.6025 18.9156 18.8927 18.9026C19.5703 18.8724 20.1955 18.545 20.7321 18.1301C21.3605 17.644 21.9692 16.9655 21.9692 15.9392V13.9392Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
                     <span class="mx-4 text-lg font-normal">
                         Navigation
                     </span>
@@ -64,7 +66,11 @@ import DataFetcher from '../components/DataFetcher'
                     </span>
                 </a>
                 
-                <CategoriaButton titulo="Fonts" categoria="Fonts" client:load/>
+                
+                <CategoriaButton titulo="Fonts" categoria="Fonts" icono={<FontIcon client:load />} client:load />
+            
+                <!-- <CategoriaButton titulo="Fonts" categoria="Fonts" client:load/>
+                
                 <CategoriaButton titulo="Coding" categoria="coding" client:load/>
                 <CategoriaButton titulo="IA" categoria="ai" client:load/>
                 <CategoriaButton titulo="Animación" categoria="animation" client:load/>
@@ -78,7 +84,7 @@ import DataFetcher from '../components/DataFetcher'
                 <CategoriaButton titulo="Iconos" categoria="icons" client:load/>
                 <CategoriaButton titulo="Pattern" categoria="pattern" client:load/>
                 <CategoriaButton titulo="Inspiracion" categoria="inspiration" client:load/>
-                <CategoriaButton titulo="Color" categoria="color" client:load/>
+                <CategoriaButton titulo="Color" categoria="color" client:load/> -->
                 
                 <DataFetcher client:load/>
             </nav>
